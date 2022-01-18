@@ -1,0 +1,19 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "creation_site_ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurentReuze/P3_REUZE_Laurent.git"
+  },
+  "author": "Laurent REUZE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaurentReuze/P3_REUZE_Laurent/issues"
+  },
+  "homepage": "https://github.com/LaurentReuze/P3_REUZE_Laurent#readme"
+}
