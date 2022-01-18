@@ -1,16 +1,3 @@
-/*Importation des polices*/
-@font-face {
-  font-family: "Shrikhand-Regular";
-  src: url("fonts/Shrikhand-Regular.ttf");
-}
-body {
-  margin: 0px;
-}
-
-main {
-  background-color: royalblue;
-}
-
 footer {
   background-color: #353535;
   color: white;
@@ -35,6 +22,54 @@ footer .partenaire {
 }
 footer .partenaire div {
   width: 30px;
+}
+
+header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  text-align: center;
+  /* Position du menu de navigation dans l'entete
+  & i{
+      font-size: 30px;
+      position: absolute;
+      top: 24%;
+      left: 20px;
+
+  }*/
+}
+header .entete {
+  width: 100%;
+}
+header .retour_accueil {
+  display: none;
+}
+header logo {
+  display: flex;
+}
+header img {
+  width: 200px;
+  height: auto;
+  align-items: center;
+}
+
+/*Importation des polices*/
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("fonts/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("fonts/Roboto-Light.ttf");
+}
+body {
+  margin: 0px;
+}
+
+main {
+  background-color: royalblue;
 }
 
 /*# sourceMappingURL=style.css.map */
