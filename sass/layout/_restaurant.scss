@@ -1,0 +1,66 @@
+#restaurants{
+    width: auto;
+    height: 1000px;
+    background-color: #f6f6f6;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cadre{
+        height: 22%;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 2px 8px rgb(204, 204, 204);
+
+
+        .photo{
+            height: 70%;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .descriptif{
+            height: 30%;
+            width: 100%;
+            background-color: white;
+            border-radius: 0px 0px 20px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & .nom_restaurant{
+                padding-top: 10px;
+                padding-bottom: 5px;
+                font-family: $font_gras;
+
+            }
+
+            & .description_restaurant{
+                width: 90%;
+                font-family: $font_normal;
+            }
+
+            & span{
+                padding-left: 10px;
+            }
+
+            & .coeur{
+                display: flex;
+                justify-content: center;
+                padding-right: 20px;
+                font-size: 20px;
+            }
+
+        }
+
+    }
+
+
+
+}

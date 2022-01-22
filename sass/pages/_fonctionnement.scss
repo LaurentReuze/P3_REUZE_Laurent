@@ -1,0 +1,61 @@
+#fonctionnement{
+
+    padding-right: 20px;
+    padding-left: 20px;
+
+    .bouton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: 300px;
+
+        div{
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px grey solid;
+            border-radius: 20px ;
+            width: 80%;
+            height: 70px;
+            align-items: center;
+    
+            &:hover{
+                background-color: pink;
+            }
+    
+            & span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: pink;
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                margin-left: -10px;
+                
+            }
+    
+            & i{
+                margin-left: 20px;
+            }
+    
+            & p{
+                margin-left: 20px;
+            }
+    
+        }
+
+        .choisir, .composer, .deguster{
+            background-color: #f6f6f6;
+            &:hover{
+                background-color: #f4ecff;
+
+                & i{
+                    color: pink;
+                }
+            }
+        }
+    }
+    
+    
+}

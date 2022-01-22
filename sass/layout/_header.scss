@@ -1,11 +1,16 @@
 header{
     display: flex;
     position: relative;
-    width: 100%;
+    width: 104%;
     height: 70px;
     align-items: center;
     text-align: center;
+    box-shadow: 0px 2px 8px rgb(204, 204, 204);
 
+    .logo{
+        font-family: $font_marque;
+        font-size: 40px;
+    }
     .entete{
         width: 100%;
     }
