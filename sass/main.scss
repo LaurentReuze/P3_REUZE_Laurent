@@ -26,7 +26,7 @@ form{
     text-align: center;
     align-items: center;
     background-color: #eaeaea;
-}
+} 
 
 input{
     margin-left: 15px;
@@ -34,6 +34,8 @@ input{
     height: 68px;
     border: none;
     background-color: #eaeaea;
+    font-family: $font_gras;
+    font-size: 15px;
 
 }
 

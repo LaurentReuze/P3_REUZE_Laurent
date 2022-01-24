@@ -3,6 +3,10 @@
     padding-right: 20px;
     padding-left: 20px;
 
+    & h2{
+        font-family: $font_gras;
+    }
+
     .bouton{
         display: flex;
         flex-direction: column;
@@ -13,26 +17,31 @@
         div{
             display: flex;
             margin-bottom: 20px;
-            border: 1px grey solid;
             border-radius: 20px ;
             width: 80%;
             height: 70px;
             align-items: center;
+
+            & p{
+                font-family: $font_gras;
+            }
     
             &:hover{
-                background-color: pink;
+                background-color: $color-primary;
             }
     
             & span{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: pink;
+                background-color: $color-primary;
                 width: 20px;
                 height: 20px;
                 border-radius: 10px;
                 margin-left: -10px;
-                
+                color: white;
+                font-family: $font_normal;
+                font-size: 14px;
             }
     
             & i{
@@ -51,7 +60,7 @@
                 background-color: #f4ecff;
 
                 & i{
-                    color: pink;
+                    color: $color-primary;
                 }
             }
         }

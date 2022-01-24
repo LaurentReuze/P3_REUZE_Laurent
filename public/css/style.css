@@ -3,7 +3,6 @@ footer {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
   height: 150px;
 }
 footer span {
@@ -29,19 +28,11 @@ footer .partenaire div {
 header {
   display: flex;
   position: relative;
-  width: 104%;
+  width: 100%;
   height: 70px;
   align-items: center;
   text-align: center;
   box-shadow: 0px 2px 8px #cccccc;
-  /* Position du menu de navigation dans l'entete
-  & i{
-      font-size: 30px;
-      position: absolute;
-      top: 24%;
-      left: 20px;
-
-  }*/
 }
 header .logo {
   font-family: "Shrikhand-Regular";
@@ -69,6 +60,9 @@ header img {
   padding-left: 20px;
   padding-right: 20px;
 }
+#restaurants h2 {
+  font-family: "Roboto-Bold";
+}
 #restaurants div {
   display: flex;
   flex-direction: column;
@@ -79,6 +73,19 @@ header img {
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0px 2px 8px #cccccc;
+  position: relative;
+}
+#restaurants .cadre .nouveau {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  background-color: #8fc58f;
+  color: green;
+  width: 80px;
+  height: 20px;
+  text-align: center;
+  font-family: "Roboto-Bold";
+  font-size: 14px;
 }
 #restaurants .cadre .photo {
   height: 70%;
@@ -139,6 +146,12 @@ header img {
   text-align: center;
   align-items: center;
 }
+#presentation h2 {
+  font-family: "Roboto-Bold";
+}
+#presentation span {
+  font-family: "Roboto-Regular";
+}
 #presentation .explorer {
   border-radius: 20px;
   height: 40px;
@@ -151,11 +164,15 @@ header img {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 2px 10px #8a8989;
   font-size: 14px;
+  margin-top: 20px;
 }
 
 #fonctionnement {
   padding-right: 20px;
   padding-left: 20px;
+}
+#fonctionnement h2 {
+  font-family: "Roboto-Bold";
 }
 #fonctionnement .bouton {
   display: flex;
@@ -167,24 +184,29 @@ header img {
 #fonctionnement .bouton div {
   display: flex;
   margin-bottom: 20px;
-  border: 1px grey solid;
   border-radius: 20px;
   width: 80%;
   height: 70px;
   align-items: center;
 }
+#fonctionnement .bouton div p {
+  font-family: "Roboto-Bold";
+}
 #fonctionnement .bouton div:hover {
-  background-color: pink;
+  background-color: #9356DC;
 }
 #fonctionnement .bouton div span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: pink;
+  background-color: #9356DC;
   width: 20px;
   height: 20px;
   border-radius: 10px;
   margin-left: -10px;
+  color: white;
+  font-family: "Roboto-Regular";
+  font-size: 14px;
 }
 #fonctionnement .bouton div i {
   margin-left: 20px;
@@ -199,7 +221,7 @@ header img {
   background-color: #f4ecff;
 }
 #fonctionnement .bouton .choisir:hover i, #fonctionnement .bouton .composer:hover i, #fonctionnement .bouton .deguster:hover i {
-  color: pink;
+  color: #9356DC;
 }
 
 body {
@@ -222,6 +244,8 @@ input {
   height: 68px;
   border: none;
   background-color: #eaeaea;
+  font-family: "Roboto-Bold";
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

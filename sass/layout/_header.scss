@@ -1,7 +1,7 @@
 header{
     display: flex;
     position: relative;
-    width: 104%;
+    width: 100%;
     height: 70px;
     align-items: center;
     text-align: center;
@@ -18,15 +18,6 @@ header{
     & .retour_accueil{
         display: none;
     }
-
-    /* Position du menu de navigation dans l'entete
-    & i{
-        font-size: 30px;
-        position: absolute;
-        top: 24%;
-        left: 20px;
-        
-    }*/
 
     & logo{
         display: flex;
