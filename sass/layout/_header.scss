@@ -13,10 +13,23 @@ header{
     }
     .entete{
         width: 100%;
+        position: relative;
     }
 
-    & .retour_accueil{
+    & a{
         display: none;
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        font-size: 30px;
+
+        @media screen and (min-width:992px) {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: black;
+            
+        }
     }
 
     & logo{
@@ -29,3 +42,29 @@ header{
         align-items: center;
     }
 }
+
+form{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #eaeaea;
+    font-family: $font_gras;
+
+    & i{
+        font-size: 17px;
+    }
+
+    & input{
+        height: 68px;
+        border: none;
+        background-color: #eaeaea;
+        font-family: $font_gras;
+        font-size: 18px;
+        padding-left: 20px;
+    
+    }
+} 
+

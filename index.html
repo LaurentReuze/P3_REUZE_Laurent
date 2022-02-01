@@ -5,13 +5,13 @@
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="/public/css/style.css">
-    <link rel="stylesheet" href="/public/" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
    <header>
       <div class="entete">
-         <div class="retour_accueil"><i class="fas fa-arrow-left"></i></div>
+         <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
          <div class="logo"><span>ohmyfood</span></div>
       </div>
    </header>
@@ -35,113 +35,121 @@
       </section>
      
       <section id="fonctionnement">
-         <h2>Fonctionnement</h2>
-         <div class="bouton">
-            <div class="choisir">
-               <span>1</span>
-               <i class="fas fa-mobile-alt"></i>
-               <p>Choisissez votre restaurant</p>
-            </div>
-            <div class="composer">
-               <span>2</span>
-               <i class="fas fa-list-ul"></i>
-               <p>Composez votre menu</p>
-            </div>
-            <div class="deguster">
-               <span>3</span>
-               <i class="fas fa-store"></i>
-               <p>Déguster au restaurant</p>
+         <div class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="bouton">
+               <div class="choisir">
+                  <span>1</span>
+                  <i class="fas fa-mobile-alt"></i>
+                  <p>Choisissez votre restaurant</p>
+               </div>
+               <div class="composer">
+                  <span>2</span>
+                  <i class="fas fa-list-ul"></i>
+                  <p>Composez votre menu</p>
+               </div>
+               <div class="deguster">
+                  <span>3</span>
+                  <i class="fas fa-store"></i>
+                  <p>Déguster au restaurant</p>
+               </div>
             </div>
          </div>
+         
          
       </section>
 
       <section id="restaurants">
          <h2>Restaurants</h2>
-         <div class="cadre">
-            <div class="photo">
-               <img src="public/images/Mesnilmontant.jpg" alt="Photo Restaurant Mesnilmontant">
-            </div>
-            <div class="nouveau">
-               <span>Nouveau</span>
-            </div>
-            <div class="descriptif">
-               <div class="description_restaurant">
-                  <div class="nom_restaurant">
-                     <span>La palette du goût</span>
+         <div class="presentation_restaurant">
+               <a href="/public/restaurants/menilmontant.html">
+                  <div class="photo mesnilmontant">
+                     <img src="public/images/Mesnilmontant.jpg" alt="Photo Restaurant Mesnilmontant">
                   </div>
-                  <div class="quartier">
-                     <span>Ménilmontant</span>
+                  <div class="nouveau">
+                     <span>Nouveau</span>
                   </div>
-               </div>
-               <div class="coeur">
-                  <i class="far fa-heart"></i>
-               </div>
-            </div>
+                  <div class="descriptif">
+                     <div class="description_restaurant">
+                        <div class="nom_restaurant">
+                           <span>La palette du goût</span>
+                        </div>
+                        <div class="quartier">
+                           <span>Ménilmontant</span>
+                        </div>
+                     </div>
+                     <div class="coeur">
+                        <i class="far fa-heart"></i>
+                     </div>
+                  </div>
+
+               <a href="/public/restaurants/charonne.html">
+                  <div class="photo charonne">
+                     <img src="public/images/Charonne.jpg" alt="Photo Restaurant Charonne">
+                  </div>
+                  <div class="nouveau">
+                     <span>Nouveau</span>
+                  </div>
+                  <div class="descriptif">
+                     <div class="description_restaurant">
+                        <div class="nom_restaurant">
+                           <span>La note enchantée</span>
+                        </div>
+                        <div class="quartier">
+                           <span>Charonne</span>
+                        </div>
+                     </div>
+                     <div class="coeur">
+                        <i class="far fa-heart"></i>
+                     </div>
+                     
+                  </div>
+               </a>
+
+               <a href="/public/restaurants/cite.html">
+                  <div class="photo cite">
+                     <img src="public/images/cite.jpg" alt="Photo Restaurant Cité Rouge">
+                  </div>
+                  <div class="descriptif">
+                     <div class="description_restaurant">
+                        <div class="nom_restaurant">
+                           <span>A la francaise</span>
+                        </div>
+                        <div class="quartier">
+                           <span>Cité Rouge</span>
+                        </div>
+                     </div>
+                     <div class="coeur">
+                        <i class="far fa-heart"></i>
+                     </div>
+                  </div>
+               </a>  
+
+               <a href="/public/restaurants/mericourt.html">
+                  <div class="photo mericourt">
+                     <img src="public/images/mericourt.jpg" alt="Photo Restaurant Folie-Méricourt">
+                  </div>
+                  <div class="descriptif">
+                     <div class="description_restaurant">
+                        <div class="nom_restaurant">
+                           <span>Le délice des sens</span>
+                        </div>
+                        <div class="quartier">
+                           <span>Folie-Méricourt</span>
+                        </div>
+                     </div>
+                     <div class="coeur">
+                        <i class="far fa-heart"></i>
+                     </div>
+                  </div>
+               </a>
          </div>
-         <div class="cadre">
-            <div class="photo">
-               <img src="public/images/Charonne.jpg" alt="Photo Restaurant Charonne">
-            </div>
-            <div class="nouveau">
-               <span>Nouveau</span>
-            </div>
-            <div class="descriptif">
-               <div class="description_restaurant">
-                  <div class="nom_restaurant">
-                     <span>La note enchantée</span>
-                  </div>
-                  <div class="quartier">
-                     <span>Charonne</span>
-                  </div>
-               </div>
-               <div class="coeur">
-                  <i class="far fa-heart"></i>
-               </div>
-               
-            </div>
-         </div>
-         <div class="cadre">
-            <div class="photo">
-               <img src="public/images/cite.jpg" alt="Photo Restaurant Cité Rouge">
-            </div>
-            <div class="descriptif">
-               <div class="description_restaurant">
-                  <div class="nom_restaurant">
-                     <span>A la francaise</span>
-                  </div>
-                  <div class="quartier">
-                     <span>Cité Rouge</span>
-                  </div>
-               </div>
-               <div class="coeur">
-                  <i class="far fa-heart"></i>
-               </div>
-            </div>
-         </div>
-         <div class="cadre">
-            <div class="photo">
-               <img src="public/images/mericourt.jpg" alt="Photo Restaurant Folie-Méricourt">
-            </div>
-            <div class="descriptif">
-               <div class="description_restaurant">
-                  <div class="nom_restaurant">
-                     <span>Le délice des sens</span>
-                  </div>
-                  <div class="quartier">
-                     <span>Folie-Méricourt</span>
-                  </div>
-               </div>
-               <div class="coeur">
-                  <i class="far fa-heart"></i>
-               </div>
-            </div>
-         </div>
+         
       </section>
    </main>
    <footer>
       <div class="marque">
-         <p>Ohmyfood</p>
+         <p>ohmyfood</p>
       </div>
       <div class="proposer">
          <div class="icone_proposer"><i class="fas fa-utensils"></i></div>

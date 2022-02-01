@@ -6,6 +6,7 @@
 @import './layout/header';
 @import "./layout/nav";
 @import './layout/restaurant';
+@import './layout/cite';
 
 @import "./base/fonts";
 
@@ -18,26 +19,7 @@ body{
     margin: 0px;
 }
 
-form{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: #eaeaea;
-} 
 
-input{
-    margin-left: 15px;
-    width: 100%;
-    height: 68px;
-    border: none;
-    background-color: #eaeaea;
-    font-family: $font_gras;
-    font-size: 15px;
-
-}
 
 
 

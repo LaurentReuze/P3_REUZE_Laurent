@@ -1,0 +1,587 @@
+footer {
+  background-color: #353535;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 180px;
+}
+
+footer span {
+  display: block;
+}
+
+footer .marque {
+  font-family: "Shrikhand-Regular";
+  padding-top: 10px;
+}
+
+footer .proposer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .proposer div {
+  width: 30px;
+}
+
+footer .partenaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .partenaire div {
+  width: 30px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 8px #cccccc;
+          box-shadow: 0px 2px 8px #cccccc;
+}
+
+header .logo {
+  font-family: "Shrikhand-Regular";
+  font-size: 40px;
+}
+
+header .entete {
+  width: 100%;
+}
+
+header .retour_accueil {
+  display: none;
+}
+
+header logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header img {
+  width: 200px;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eaeaea;
+  font-family: "Roboto-Bold";
+}
+
+form i {
+  font-size: 17px;
+}
+
+form input {
+  height: 68px;
+  border: none;
+  background-color: #eaeaea;
+  font-family: "Roboto-Bold";
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+#restaurants {
+  width: auto;
+  height: 1000px;
+  background-color: #f6f6f6;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#restaurants .presentation_restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#restaurants .presentation_restaurant div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  #restaurants .presentation_restaurant {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+    margin-left: 20px;
+  }
+}
+
+#restaurants h2 {
+  font-family: "Roboto-Bold";
+}
+
+#restaurants a {
+  text-decoration: none;
+  color: black;
+}
+
+#restaurants .cadre {
+  height: 22%;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 2px 8px #cccccc;
+          box-shadow: 0px 2px 8px #cccccc;
+  position: relative;
+}
+
+#restaurants .cadre .nouveau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  background-color: #98e3d0;
+  color: #098a6b;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  font-family: "Roboto-Bold";
+  font-size: 14px;
+}
+
+#restaurants .cadre .photo {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#restaurants .cadre .descriptif {
+  height: 30%;
+  width: 100%;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#restaurants .cadre .descriptif .nom_restaurant {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: "Roboto-Bold";
+}
+
+#restaurants .cadre .descriptif .description_restaurant {
+  width: 90%;
+  font-family: "Roboto-Regular";
+}
+
+#restaurants .cadre .descriptif span {
+  padding-left: 10px;
+}
+
+#restaurants .cadre .descriptif .coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+body {
+  background-color: #f7f7f6;
+}
+
+.photo_plat {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo_plat img {
+  height: auto;
+  width: 100%;
+}
+
+.titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 280px;
+  z-index: 1;
+  border-radius: 40px 40px 0px 0px;
+  background-color: #f7f7f6;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.titre span {
+  font-family: "Shrikhand-Regular";
+  font-size: 30px;
+}
+
+.titre .coeur {
+  font-size: 30px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #f7f7f6;
+}
+
+.menu .entree, .menu .plats, .menu .dessert {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Roboto-Regular";
+}
+
+.menu p {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.menu p span {
+  -webkit-text-decoration: underline #99E2D0;
+          text-decoration: underline #99E2D0;
+  text-underline-offset: 10px;
+}
+
+.menu .plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 10px #cac9c9;
+          box-shadow: 0px 2px 10px #cac9c9;
+  margin-bottom: 20px;
+}
+
+.menu .plat .valider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+}
+
+.menu .plat .valider i {
+  font-size: 25px;
+  color: white;
+}
+
+.menu .plat .descriptif {
+  padding-left: 20px;
+}
+
+.menu .plat .nom_plat {
+  font-family: "Roboto-Bold";
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.menu .plat .detail_plat {
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+}
+
+.menu .plat .prix {
+  font-family: "Roboto-Bold";
+  padding-right: 20px;
+}
+
+.bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f7f7f6;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bouton input {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  margin-left: 0px;
+  border-radius: 25px;
+  width: 180px;
+  height: 50px;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 2px 10px #cac9c9;
+          box-shadow: 0px 2px 10px #cac9c9;
+}
+
+/*Importation des polices*/
+@font-face {
+  font-family: 'Shrikhand-Regular';
+  src: url("fonts/Shrikhand-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("fonts/Roboto-Bold.ttf");
+}
+
+#presentation {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+  width: auto;
+  height: 300px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#presentation h2 {
+  font-family: "Roboto-Bold";
+}
+
+#presentation span {
+  font-family: "Roboto-Regular";
+}
+
+#presentation .explorer {
+  border-radius: 20px;
+  height: 40px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto-Regular";
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 2px 10px #8a8989;
+          box-shadow: 0px 2px 10px #8a8989;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#fonctionnement {
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: white;
+}
+
+#fonctionnement h2 {
+  font-family: "Roboto-Bold";
+}
+
+#fonctionnement .bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 300px;
+  background-color: white;
+}
+
+@media screen and (min-width: 992px) {
+  #fonctionnement .bouton {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px;
+  }
+}
+
+#fonctionnement .bouton div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 80%;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  #fonctionnement .bouton div {
+    width: 30%;
+    margin-left: 20px;
+  }
+}
+
+#fonctionnement .bouton div p {
+  font-family: "Roboto-Bold";
+}
+
+#fonctionnement .bouton div:hover {
+  background-color: #9356DC;
+}
+
+#fonctionnement .bouton div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9356DC;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-left: -10px;
+  color: white;
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+}
+
+#fonctionnement .bouton div i {
+  margin-left: 20px;
+}
+
+#fonctionnement .bouton div p {
+  margin-left: 20px;
+}
+
+#fonctionnement .bouton .choisir, #fonctionnement .bouton .composer, #fonctionnement .bouton .deguster {
+  background-color: #f6f6f6;
+}
+
+#fonctionnement .bouton .choisir:hover, #fonctionnement .bouton .composer:hover, #fonctionnement .bouton .deguster:hover {
+  background-color: #f4ecff;
+}
+
+#fonctionnement .bouton .choisir:hover i, #fonctionnement .bouton .composer:hover i, #fonctionnement .bouton .deguster:hover i {
+  color: #9356DC;
+}
+
+body {
+  margin: 0px;
+}
+/*# sourceMappingURL=main.css.map */

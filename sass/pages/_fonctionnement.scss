@@ -2,17 +2,29 @@
 
     padding-right: 20px;
     padding-left: 20px;
+    background-color: white;
 
-    & h2{
+    @media screen and (min-width:992px) {
+        height: auto;
+    }
+
+    h2{
         font-family: $font_gras;
+        padding-top: 20px;
     }
 
     .bouton{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: auto;
-        height: 300px;
+        background-color: white;
+
+        @media screen and (min-width:992px) {
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            margin: 0px;
+        }
 
         div{
             display: flex;
@@ -21,6 +33,11 @@
             width: 80%;
             height: 70px;
             align-items: center;
+
+            @media screen and (min-width:992px) {
+                width: 30%;
+                margin-left: 20px;
+            }
 
             & p{
                 font-family: $font_gras;
