@@ -74,18 +74,41 @@ body{
         margin-bottom: 20px;
 
 
+        &:hover{
+            .prix{
+                transition-duration: 1000ms;
+                transform: translate(5px, 0px);
+            }
+            .valider{
+                transition: all 1000ms;
+                width: 60px;
+                align-items: center;
+                justify-content: center;
+                & i{
+                    display: flex;
+                    font-size: 25px;
+                    color: white;
+                    align-items: center;
+                    transform: rotate(1turn);
+                    
+                }
+
+            }
+        }
+
+
         & .valider{
             display: flex;
-            width: 60px;
+            width: 0px;
             height: 100%;
             border-radius: 0px 20px 20px 0px;
-            justify-content: center;
-            align-items: center;
             background-color: $color-tertiary;
             & i{
-                font-size: 25px;
-                color: white;
+                display: flex;
+                transform: rotate(.5turn);
+                
             }
+            
         }
 
         & .descriptif{
@@ -107,6 +130,7 @@ body{
         & .prix{
             font-family: $font_gras;
             padding-right: 20px;
+            transform: translate(50px, 0px);
         }
     }
 
