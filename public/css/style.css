@@ -1,3 +1,27 @@
+.plat:hover .valider {
+  transition: all 1000ms;
+  display: flex;
+  width: 20%;
+}
+.plat:hover .valider i {
+  transition: all 1000ms;
+  display: flex;
+}
+.plat:hover .descriptif {
+  width: 190px;
+  transition: all 1000ms;
+}
+.plat:hover .descriptif .nom_plat {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.plat:hover .descriptif .detail_plat {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -43,7 +67,6 @@ header .entete {
   position: relative;
 }
 header a {
-  display: none;
   position: absolute;
   left: 30px;
   top: 10px;
@@ -168,12 +191,6 @@ form input {
     height: 15%;
   }
 }
-#restaurants a .descriptif .coeur {
-  display: flex;
-  align-items: center;
-  padding-right: 20px;
-  font-size: 20px;
-}
 #restaurants a .descriptif .nom_restaurant {
   padding-top: 10px;
   padding-bottom: 5px;
@@ -225,6 +242,10 @@ body {
 .titre .coeur {
   font-size: 30px;
 }
+.titre .coeur {
+  font-size: 30px;
+  display: none;
+}
 
 .menu {
   display: flex;
@@ -256,36 +277,28 @@ body {
   box-shadow: 0px 2px 10px #cac9c9;
   margin-bottom: 20px;
 }
-.menu .plat:hover .prix {
-  transition-duration: 1000ms;
-  transform: translate(5px, 0px);
-}
-.menu .plat:hover .valider {
-  transition: all 1000ms;
-  width: 60px;
-  align-items: center;
-  justify-content: center;
-}
-.menu .plat:hover .valider i {
-  display: flex;
-  font-size: 25px;
-  color: white;
-  align-items: center;
-  transform: rotate(1turn);
-}
 .menu .plat .valider {
   display: flex;
   width: 0px;
   height: 100%;
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+  overflow: hidden;
 }
 .menu .plat .valider i {
-  display: flex;
-  transform: rotate(0.5turn);
+  display: none;
+  font-size: 25px;
+  color: white;
+  align-items: center;
+  transform: rotate(180deg);
 }
 .menu .plat .descriptif {
   padding-left: 20px;
+  width: 280px;
 }
 .menu .plat .nom_plat {
   font-family: "Roboto-Bold";
@@ -298,8 +311,8 @@ body {
 }
 .menu .plat .prix {
   font-family: "Roboto-Bold";
-  padding-right: 20px;
-  transform: translate(50px, 0px);
+  width: 15%;
+  text-align: center;
 }
 
 .bouton {
@@ -447,6 +460,16 @@ body {
 
 body {
   margin: 0px;
+}
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 1440px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

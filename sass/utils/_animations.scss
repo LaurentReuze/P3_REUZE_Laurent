@@ -1,0 +1,31 @@
+.plat{
+    &:hover{
+            
+        .valider{
+            transition: all 1000ms;
+            display: flex;
+            width: 20%;
+            & i{
+                transition: all 1000ms;
+                display: flex;
+                // transform: rotate(0deg);
+            }
+
+        }
+        
+        .descriptif{
+            width: 190px;
+            transition: all 1000ms;
+            & .nom_plat{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            & .detail_plat{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
