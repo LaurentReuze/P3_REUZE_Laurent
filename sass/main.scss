@@ -39,8 +39,7 @@ body{
         justify-content: center;
 
         .loader {
-            // opacity: 1;
-            
+            opacity: 1;
             display: flex;
             border: 16px solid #f3f3f3;
             border-radius: 50%;
@@ -49,10 +48,7 @@ body{
             border-bottom: 16px solid $color-tertiary;
             width: 120px;
             height: 120px;
-            animation-name: loader;
-            animation-duration: 1s;
-            animation-timing-function: linear;
-            animation-iteration-count: 6;
+            margin-top: 350px;
         }
     }
     

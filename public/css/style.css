@@ -1,3 +1,23 @@
+.menu .numero1 {
+  animation-name: apparition_menu;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.menu .numero2 {
+  animation-name: apparition_menu;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.menu .numero3 {
+  animation-name: apparition_menu;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.menu .plat {
+  opacity: 0;
+}
 .menu .plat:hover .valider {
   transition: all 1000ms;
   display: flex;
@@ -40,9 +60,19 @@
   opacity: 1;
 }
 
+.loader {
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+
 .loader_spin {
   animation-name: disparition_fond_ecran;
-  animation-duration: 1ms;
+  animation-duration: 0.1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes rotation-check {
@@ -77,6 +107,17 @@
   }
   100% {
     opacity: 0;
+    transform: translate(-1000px);
+  }
+}
+@keyframes apparition_menu {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
 }
 footer {
@@ -548,6 +589,7 @@ body .loader_spin {
   justify-content: center;
 }
 body .loader_spin .loader {
+  opacity: 1;
   display: flex;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -556,10 +598,7 @@ body .loader_spin .loader {
   border-bottom: 16px solid #99E2D0;
   width: 120px;
   height: 120px;
-  animation-name: loader;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: 6;
+  margin-top: 350px;
 }
 
 /*# sourceMappingURL=style.css.map */
