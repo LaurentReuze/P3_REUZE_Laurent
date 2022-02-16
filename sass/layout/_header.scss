@@ -17,6 +17,7 @@ header{
 
         i{
             display: none;
+            
         }
     }
 
@@ -25,6 +26,7 @@ header{
         left: 30px;
         top: 10px;
         font-size: 30px;
+        text-decoration: none;
 
         @media screen and (min-width:992px) {
             display: flex;

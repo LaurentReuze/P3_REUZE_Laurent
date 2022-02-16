@@ -16,6 +16,12 @@
         animation-delay: 1s;
         animation-fill-mode: forwards;
     }
+    .numero4{
+        animation-name: apparition_menu;
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+    }
     .plat{
         opacity: 0;
         &:hover{
@@ -33,6 +39,9 @@
             .descriptif{
                 width: 190px;
                 transition: all 1000ms;
+                @media screen and (min-width:768px) {
+                    width: 250px;
+                }
                 & .nom_plat{
                     overflow: hidden;
                     white-space: nowrap;
@@ -56,6 +65,9 @@
         right: 20px;
         top:-20px;
         font-size: 30px;
+        @media screen and (min-width:768px) {
+            font-size: 36px;
+        }
     }
     .plein{
         opacity: 0;

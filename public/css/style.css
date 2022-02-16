@@ -15,6 +15,12 @@
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
+.menu .numero4 {
+  animation-name: apparition_menu;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
 .menu .plat {
   opacity: 0;
 }
@@ -31,6 +37,11 @@
 .menu .plat:hover .descriptif {
   width: 190px;
   transition: all 1000ms;
+}
+@media screen and (min-width: 768px) {
+  .menu .plat:hover .descriptif {
+    width: 250px;
+  }
 }
 .menu .plat:hover .descriptif .nom_plat {
   overflow: hidden;
@@ -51,6 +62,11 @@
   right: 20px;
   top: -20px;
   font-size: 30px;
+}
+@media screen and (min-width: 768px) {
+  .coeur .vide, .coeur .plein {
+    font-size: 36px;
+  }
 }
 .coeur .plein {
   opacity: 0;
@@ -107,7 +123,7 @@
   }
   100% {
     opacity: 0;
-    transform: translate(-1000px);
+    transform: translate(-10000px);
   }
 }
 @keyframes apparition_menu {
@@ -123,9 +139,15 @@
 footer {
   background-color: #353535;
   color: white;
+  line-height: 1.3;
   padding-left: 20px;
   padding-right: 20px;
-  height: 180px;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    height: 200px;
+    font-size: 20px;
+  }
 }
 footer span {
   display: block;
@@ -172,6 +194,7 @@ header a {
   left: 30px;
   top: 10px;
   font-size: 30px;
+  text-decoration: none;
 }
 @media screen and (min-width: 992px) {
   header a {
@@ -212,104 +235,15 @@ form input {
   padding-left: 20px;
 }
 
-#restaurants {
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: #f7f7f6;
-}
-#restaurants h2 {
-  font-family: "Roboto-Bold";
-}
-#restaurants .presentation_restaurant {
-  width: 100%;
-  height: 1000px;
-}
 @media screen and (min-width: 992px) {
-  #restaurants .presentation_restaurant {
-    text-align: center;
+  #page {
+    max-width: 1440px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
   }
-}
-#restaurants a {
-  text-decoration: none;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  height: 25%;
-  width: 100%;
-  position: relative;
-}
-@media screen and (min-width: 992px) {
-  #restaurants a {
-    display: inline-block;
-    height: 50%;
-    width: 45%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: 20px;
-  }
-}
-#restaurants a .nouveau {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: #98e3d0;
-  color: #098a6b;
-  width: 80px;
-  height: 30px;
-  font-family: "Roboto-Bold";
-  font-size: 14px;
-  border-radius: 5px;
-}
-#restaurants a .photo {
-  width: 100%;
-  height: 70%;
-  overflow: hidden;
-  border-radius: 20px 20px 0px 0px;
-}
-@media screen and (min-width: 992px) {
-  #restaurants a .photo {
-    height: 75%;
-  }
-}
-#restaurants a .photo img {
-  width: 100%;
-}
-#restaurants a .descriptif {
-  height: 25%;
-  width: 100%;
-  background-color: white;
-  border-radius: 0px 0px 20px 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@media screen and (min-width: 992px) {
-  #restaurants a .descriptif {
-    text-align: left;
-    height: 15%;
-  }
-}
-#restaurants a .descriptif .vide, #restaurants a .descriptif .plein {
-  top: 19px;
-}
-#restaurants a .descriptif .nom_restaurant {
-  padding-top: 10px;
-  padding-bottom: 5px;
-  font-family: "Roboto-Bold";
-}
-#restaurants a .descriptif .description_restaurant {
-  width: 90%;
-  font-family: "Roboto-Regular";
-}
-#restaurants a .descriptif span {
-  padding-left: 10px;
-}
-
-body {
-  background-color: #f7f7f6;
 }
 
 .entete {
@@ -326,20 +260,40 @@ body {
   overflow: hidden;
   position: relative;
 }
+@media screen and (min-width: 992px) {
+  .photo_plat {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photo_plat {
+    height: 350px;
+  }
+}
 .photo_plat img {
   height: auto;
   width: 100%;
+  transform: translate(0px, -30px);
+}
+
+.titre_restaurant {
+  width: 100%;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .titre_restaurant {
+    font-size: 30px;
+  }
 }
 
 .titre {
-  display: flex;
   width: 100%;
   position: absolute;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   box-sizing: border-box;
-  top: 280px;
+  top: -54px;
   z-index: 1;
   border-radius: 40px 40px 0px 0px;
   background-color: #f7f7f6;
@@ -351,6 +305,11 @@ body {
   font-family: "Shrikhand-Regular";
   font-size: 30px;
 }
+@media screen and (min-width: 768px) {
+  .titre span {
+    font-size: 36px;
+  }
+}
 
 .menu {
   display: flex;
@@ -358,18 +317,48 @@ body {
   width: 100%;
   background-color: #f7f7f6;
 }
+.menu p {
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: "Roboto-Regular";
+}
+.menu p span {
+  text-decoration: underline #99E2D0;
+  text-underline-offset: 10px;
+}
+@media screen and (min-width: 992px) {
+  .menu p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
 .menu .entree, .menu .plats, .menu .dessert {
   padding-left: 20px;
   padding-right: 20px;
   font-family: "Roboto-Regular";
 }
-.menu p {
-  margin-top: 40px;
-  margin-bottom: 30px;
+@media screen and (min-width: 992px) {
+  .menu .entree, .menu .plats, .menu .dessert {
+    display: flex;
+    justify-content: space-between;
+  }
 }
-.menu p span {
-  text-decoration: underline #99E2D0;
-  text-underline-offset: 10px;
+@media screen and (min-width: 768px) {
+  .menu .entree, .menu .plats, .menu .dessert {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .entree .numero2, .menu .entree .numero4, .menu .plats .numero2, .menu .plats .numero4, .menu .dessert .numero2, .menu .dessert .numero4 {
+    align-self: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .entree .numero1, .menu .entree .numero3, .menu .plats .numero1, .menu .plats .numero3, .menu .dessert .numero1, .menu .dessert .numero3 {
+    align-self: flex-end;
+  }
 }
 .menu .plat {
   display: flex;
@@ -382,6 +371,18 @@ body {
   box-shadow: 0px 2px 10px #cac9c9;
   margin-bottom: 20px;
   overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  .menu .plat {
+    height: 110px !important;
+    width: 70% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu .plat {
+    width: 65%;
+    height: 90px;
+  }
 }
 .menu .plat .valider {
   display: flex;
@@ -405,19 +406,39 @@ body {
   padding-left: 20px;
   width: 280px;
 }
+@media screen and (min-width: 768px) {
+  .menu .plat .descriptif {
+    width: 450px;
+  }
+}
 .menu .plat .nom_plat {
   font-family: "Roboto-Bold";
   font-size: 18px;
   margin-bottom: 5px;
 }
+@media screen and (min-width: 768px) {
+  .menu .plat .nom_plat {
+    font-size: 24px;
+  }
+}
 .menu .plat .detail_plat {
   font-family: "Roboto-Regular";
   font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .menu .plat .detail_plat {
+    font-size: 22px;
+  }
 }
 .menu .plat .prix {
   font-family: "Roboto-Bold";
   width: 15%;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .menu .plat .prix {
+    font-size: 24px;
+  }
 }
 
 .bouton {
@@ -439,6 +460,11 @@ body {
   font-family: "Roboto-Regular";
   font-size: 16px;
 }
+@media screen and (min-width: 768px) {
+  .bouton input {
+    font-size: 24px;
+  }
+}
 
 /*Importation des polices*/
 @font-face {
@@ -453,7 +479,50 @@ body {
   font-family: "Roboto-Bold";
   src: url("fonts/Roboto-Bold.ttf");
 }
-#presentation {
+@media screen and (min-width: 992px) {
+  #page {
+    max-width: 1440px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  #page {
+    max-width: 820px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+  }
+}
+#page .loader_spin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  display: flex;
+  z-index: 999;
+  opacity: 0.8;
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  #page .loader_spin {
+    width: 54%;
+  }
+}
+#page .loader_spin .loader {
+  opacity: 1;
+  display: flex;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-bottom: 16px solid #99E2D0;
+  width: 120px;
+  height: 120px;
+  margin-top: 350px;
+}
+#page #presentation {
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
@@ -465,13 +534,33 @@ body {
   text-align: center;
   align-items: center;
 }
-#presentation h2 {
+#page #presentation h2 {
   font-family: "Roboto-Bold";
 }
-#presentation span {
+@media screen and (min-width: 992px) {
+  #page #presentation h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #page #presentation h2 {
+    font-size: 30px;
+  }
+}
+#page #presentation span {
   font-family: "Roboto-Regular";
 }
-#presentation .explorer {
+@media screen and (min-width: 992px) {
+  #page #presentation span {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #page #presentation span {
+    font-size: 24px;
+  }
+}
+#page #presentation .explorer {
   border-radius: 20px;
   height: 40px;
   width: 200px;
@@ -485,36 +574,52 @@ body {
   font-size: 14px;
   margin-top: 20px;
 }
-
-#fonctionnement {
+@media screen and (min-width: 768px) {
+  #page #presentation .explorer {
+    width: 350px;
+    height: 60px;
+    border-radius: 30px;
+  }
+}
+#page #fonctionnement {
   padding-right: 20px;
   padding-left: 20px;
   background-color: white;
 }
 @media screen and (min-width: 992px) {
-  #fonctionnement {
+  #page #fonctionnement {
     height: auto;
   }
 }
-#fonctionnement h2 {
+#page #fonctionnement h2 {
   font-family: "Roboto-Bold";
   padding-top: 20px;
 }
-#fonctionnement .bouton {
+#page #fonctionnement .bouton {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
+  justify-content: space-between;
 }
 @media screen and (min-width: 992px) {
-  #fonctionnement .bouton {
-    flex-direction: row;
+  #page #fonctionnement .bouton {
     width: 100%;
     align-items: center;
     margin: 0px;
   }
 }
-#fonctionnement .bouton div {
+@media screen and (min-width: 992px) {
+  #page #fonctionnement .bouton .composer {
+    align-self: flex-end;
+  }
+}
+@media screen and (min-width: 992px) {
+  #page #fonctionnement .bouton .choisir, #page #fonctionnement .bouton .deguster {
+    align-self: flex-start;
+  }
+}
+#page #fonctionnement .bouton div {
   display: flex;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -523,18 +628,18 @@ body {
   align-items: center;
 }
 @media screen and (min-width: 992px) {
-  #fonctionnement .bouton div {
-    width: 30%;
+  #page #fonctionnement .bouton div {
+    width: 70%;
     margin-left: 20px;
   }
 }
-#fonctionnement .bouton div p {
+#page #fonctionnement .bouton div p {
   font-family: "Roboto-Bold";
 }
-#fonctionnement .bouton div:hover {
+#page #fonctionnement .bouton div:hover {
   background-color: #9356DC;
 }
-#fonctionnement .bouton div span {
+#page #fonctionnement .bouton div span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,58 +652,169 @@ body {
   font-family: "Roboto-Regular";
   font-size: 14px;
 }
-#fonctionnement .bouton div i {
-  margin-left: 20px;
-}
-#fonctionnement .bouton div p {
-  margin-left: 20px;
-}
-#fonctionnement .bouton .choisir, #fonctionnement .bouton .composer, #fonctionnement .bouton .deguster {
-  background-color: #f6f6f6;
-}
-#fonctionnement .bouton .choisir:hover, #fonctionnement .bouton .composer:hover, #fonctionnement .bouton .deguster:hover {
-  background-color: #f4ecff;
-}
-#fonctionnement .bouton .choisir:hover i, #fonctionnement .bouton .composer:hover i, #fonctionnement .bouton .deguster:hover i {
-  color: #9356DC;
-}
-
-body {
-  margin: 0px;
-  position: relative;
-  width: 100%;
-}
-@media screen and (min-width: 992px) {
-  body {
-    max-width: 1440px;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
+@media screen and (min-width: 768px) {
+  #page #fonctionnement .bouton div span {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: -15px;
   }
 }
-body .loader_spin {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: gray;
-  display: flex;
-  z-index: 999;
-  opacity: 0.8;
-  justify-content: center;
+@media screen and (min-width: 992px) {
+  #page #fonctionnement .bouton div span {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    margin-left: -15px;
+  }
 }
-body .loader_spin .loader {
-  opacity: 1;
+#page #fonctionnement .bouton div i {
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  #page #fonctionnement .bouton div i {
+    font-size: 20px;
+  }
+}
+#page #fonctionnement .bouton div p {
+  margin-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  #page #fonctionnement .bouton div p {
+    font-size: 20px;
+  }
+}
+#page #fonctionnement .bouton .choisir, #page #fonctionnement .bouton .composer, #page #fonctionnement .bouton .deguster {
+  background-color: #f6f6f6;
+}
+#page #fonctionnement .bouton .choisir:hover, #page #fonctionnement .bouton .composer:hover, #page #fonctionnement .bouton .deguster:hover {
+  background-color: #f4ecff;
+}
+#page #fonctionnement .bouton .choisir:hover i, #page #fonctionnement .bouton .composer:hover i, #page #fonctionnement .bouton .deguster:hover i {
+  color: #9356DC;
+}
+#page #restaurants {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f7f7f6;
+}
+#page #restaurants h2 {
+  font-family: "Roboto-Bold";
+  padding-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  #page #restaurants h2 {
+    font-size: 2em;
+  }
+}
+#page #restaurants .presentation_restaurant {
+  width: 100%;
+  height: 1000px;
+}
+@media screen and (min-width: 992px) {
+  #page #restaurants .presentation_restaurant {
+    text-align: center;
+    height: 600px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  #page #restaurants .presentation_restaurant {
+    height: 1200px;
+  }
+}
+#page #restaurants a {
+  text-decoration: none;
+  color: black;
   display: flex;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #9356DC;
-  border-right: 16px solid #FF79DA;
-  border-bottom: 16px solid #99E2D0;
-  width: 120px;
-  height: 120px;
-  margin-top: 350px;
+  flex-direction: column;
+  height: 25%;
+  width: 100%;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  #page #restaurants a {
+    display: inline-block;
+    height: 50%;
+    width: 45%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 20px;
+  }
+}
+#page #restaurants a .nouveau {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #98e3d0;
+  color: #098a6b;
+  width: 80px;
+  height: 30px;
+  font-family: "Roboto-Bold";
+  font-size: 14px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  #page #restaurants a .nouveau {
+    font-size: 20px;
+    width: 120px;
+    height: 35px;
+  }
+}
+#page #restaurants a .photo {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+  max-height: 222px;
+}
+#page #restaurants a .photo img {
+  width: 100%;
+  transform: translate(0px, -50px);
+}
+#page #restaurants a .descriptif {
+  height: 25%;
+  width: 100%;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  #page #restaurants a .descriptif {
+    text-align: left;
+    height: 15%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #page #restaurants a .descriptif {
+    height: 20%;
+  }
+}
+#page #restaurants a .descriptif .vide, #page #restaurants a .descriptif .plein {
+  top: 19px;
+}
+#page #restaurants a .descriptif .nom_restaurant {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: "Roboto-Bold";
+}
+#page #restaurants a .descriptif .description_restaurant {
+  width: 90%;
+  font-family: "Roboto-Regular";
+}
+#page #restaurants a .descriptif span {
+  padding-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  #page #restaurants a .descriptif span {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

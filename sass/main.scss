@@ -6,29 +6,27 @@
 
 @import './layout/footer';
 @import './layout/header';
-@import './layout/restaurant';
 @import './layout/cite';
 
 @import "./base/fonts";
 
-@import './pages/presentation';
-@import './pages/fonctionnement';
-
-body{
-    margin: 0px;
-    position: relative;
-    width: 100%;
+#page{
 
     @media screen and (min-width: 992px) {
         max-width: 1440px;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        margin: auto;
     }
 
-    .loader_spin{
+    @media screen and (min-width: 768px) {
+        max-width: 820px;
+        box-sizing: border-box;
+        width: 100%;
+        margin: auto;
+    }
+
+    & .loader_spin{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -37,6 +35,12 @@ body{
         z-index: 999;
         opacity: 0.8;
         justify-content: center;
+
+        @media screen and (min-width: 992px) {
+            // box-sizing: border-box;
+            width: 54%;
+        }
+        
 
         .loader {
             opacity: 1;
@@ -51,6 +55,322 @@ body{
             margin-top: 350px;
         }
     }
+
+    #presentation{
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f6f6f6;
+        width: auto;
+        height: 300px;
+        text-align: center;
+        align-items: center;
+    
+        & h2{
+            font-family: $font_gras;
+            @media screen and (min-width: 992px) {
+                font-size: 30px;
+            }
+        
+            @media screen and (min-width: 768px) {
+                font-size: 30px;
+            }
+        }
+    
+        & span{
+            font-family: $font_normal;
+            @media screen and (min-width: 992px) {
+                font-size: 24px;
+            }
+        
+            @media screen and (min-width: 768px) {
+                font-size: 24px;
+            }
+        }
+    
+        & .explorer{
+            border-radius: 20px;
+            height: 40px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font_normal;
+            color: white;
+            background: linear-gradient($color-secondary, $color-primary);
+            box-shadow: 0px 2px 10px rgb(138, 137, 137);
+            font-size: 14px;
+            margin-top: 20px;
+        
+            @media screen and (min-width: 768px) {
+                width: 350px;
+                height: 60px;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    #fonctionnement{
+
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: white;
+    
+        @media screen and (min-width:992px) {
+            height: auto;
+        }
+    
+        h2{
+            font-family: $font_gras;
+            padding-top: 20px;
+            
+        }
+    
+        .bouton{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            justify-content: space-between;
+    
+            @media screen and (min-width:992px) {
+                width: 100%;
+                align-items: center;
+                margin: 0px;
+                
+            }
+
+            .composer{
+                @media screen and (min-width:992px) {
+                    align-self: flex-end;                    
+                }
+            }
+
+            .choisir, .deguster{
+                @media screen and (min-width:992px) {
+                    align-self: flex-start;                    
+                }
+            }
+    
+            div{
+                display: flex;
+                margin-bottom: 20px;
+                border-radius: 20px ;
+                width: 80%;
+                height: 70px;
+                align-items: center;
+    
+                @media screen and (min-width:992px) {
+                    width: 70%;
+                    margin-left: 20px;
+                }
+    
+                & p{
+                    font-family: $font_gras;
+                }
+        
+                &:hover{
+                    background-color: $color-primary;
+                }
+        
+                & span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $color-primary;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    margin-left: -10px;
+                    color: white;
+                    font-family: $font_normal;
+                    font-size: 14px;
+                    @media screen and (min-width:768px) {
+                        font-size: 20px;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 15px;
+                        margin-left: -15px;
+                    }
+                    @media screen and (min-width:992px) {
+                        font-size: 20px;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 15px;
+                        margin-left: -15px;
+                    }
+                }
+        
+                & i{
+                    margin-left: 20px;
+                    @media screen and (min-width:768px) {
+                        font-size: 20px;
+                    }
+                }
+        
+                & p{
+                    margin-left: 20px;
+                    @media screen and (min-width:768px) {
+                        font-size: 20px;
+                    }
+                    
+                }
+        
+            }
+    
+            .choisir, .composer, .deguster{
+                background-color: #f6f6f6;
+                &:hover{
+                    background-color: #f4ecff;
+    
+                    & i{
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+
+    #restaurants{
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #f7f7f6;
+        
+    
+        & h2{
+            font-family: $font-gras;
+            padding-top: 30px;
+            @media screen and (min-width:768px) {
+                font-size: 2em;
+            }
+        }
+    
+        & .presentation_restaurant{
+            width: 100%;
+            height: 1000px;
+    
+            @media screen and (min-width:992px) {
+                text-align: center;
+                height: 600px !important;
+            }
+
+            @media screen and (min-width:768px) {
+                height: 1200px;
+            }
+        }
+    
+        a{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            height: 25%;
+            width: 100%;
+            position: relative;
+    
+            @media screen and (min-width:992px) {
+                display: inline-block;
+                height: 50%;
+                width: 45%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-right: 20px;
+            }
+            
+
+            & .nouveau{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                background-color: #98e3d0;
+                color: #098a6b;
+                width: 80px;
+                height: 30px;
+                font-family: $font_gras;
+                font-size: 14px;
+                border-radius: 5px;
+                @media screen and (min-width:768px) {
+                    font-size: 20px;
+                    width: 120px;
+                    height: 35px;
+                }
+            }
+
+            .photo{
+                width: 100%;
+                height: 70%;
+                overflow: hidden;
+                border-radius: 20px 20px 0px 0px;
+                max-height: 222px;
+    
+                & img{
+                    width: 100%;
+                    transform: translate(0px, -50px);
+                }
+                
+            }
+    
+        
+    
+            .descriptif{
+                height: 25%;
+                width: 100%;
+                background-color: white;
+                border-radius: 0px 0px 20px 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                @media screen and (min-width:992px) {
+                 text-align: left;
+                 height: 15%;
+                }
+
+                @media screen and (min-width:768px) {
+                    height: 20%;
+                }
+    
+                .vide, .plein{
+                    top: 19px;
+                }
+                
+                & .nom_restaurant{
+                    padding-top: 10px;
+                    padding-bottom: 5px;
+                    font-family: $font_gras;
+        
+                }
+        
+                & .description_restaurant{
+                    width: 90%;
+                    font-family: $font_normal;
+                }
+        
+                & span{
+                    padding-left: 10px;
+                    @media screen and (min-width:768px) {
+                        font-size: 20px;
+                    }
+                }
+        
+                
+        
+            }
+        }
+    
+        
+    
+        
+    }
+
+    
     
       
 }
