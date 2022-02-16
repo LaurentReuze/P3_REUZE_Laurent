@@ -1,31 +1,58 @@
-.plat{
-    &:hover{
-            
-        .valider{
-            transition: all 1000ms;
-            display: flex;
-            width: 20%;
-            & i{
+.menu{
+    .plat{
+        &:hover{
+            .valider{
                 transition: all 1000ms;
                 display: flex;
-                // transform: rotate(0deg);
+                width: 20%;
+                & i{
+                    animation-name: rotation-check;
+                    animation-duration: 1000ms;
+                    display: flex;
+                }
+    
             }
-
-        }
-        
-        .descriptif{
-            width: 190px;
-            transition: all 1000ms;
-            & .nom_plat{
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-            & .detail_plat{
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+            .descriptif{
+                width: 190px;
+                transition: all 1000ms;
+                & .nom_plat{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                & .detail_plat{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
             }
         }
     }
+}
+
+.coeur{
+    position:relative;
+    
+    .vide, .plein{
+        position: absolute;
+        right: 20px;
+        top:-20px;
+        font-size: 30px;
+    }
+    .plein{
+        opacity: 0;
+    }
+    &:hover{
+
+        .plein{
+            transition: all 800ms;
+            opacity: 1;
+        }
+    }
+}
+
+.loader_spin{
+    animation-name: disparition_fond_ecran;
+    animation-duration: 1ms;
+    // animation-delay: 3s;
 }

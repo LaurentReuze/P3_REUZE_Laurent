@@ -14,6 +14,10 @@ header{
     .entete{
         width: 100%;
         position: relative;
+
+        i{
+            display: none;
+        }
     }
 
     & a{

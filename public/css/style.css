@@ -1,27 +1,84 @@
-.plat:hover .valider {
+.menu .plat:hover .valider {
   transition: all 1000ms;
   display: flex;
   width: 20%;
 }
-.plat:hover .valider i {
-  transition: all 1000ms;
+.menu .plat:hover .valider i {
+  animation-name: rotation-check;
+  animation-duration: 1000ms;
   display: flex;
 }
-.plat:hover .descriptif {
+.menu .plat:hover .descriptif {
   width: 190px;
   transition: all 1000ms;
 }
-.plat:hover .descriptif .nom_plat {
+.menu .plat:hover .descriptif .nom_plat {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.plat:hover .descriptif .detail_plat {
+.menu .plat:hover .descriptif .detail_plat {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
+.coeur {
+  position: relative;
+}
+.coeur .vide, .coeur .plein {
+  position: absolute;
+  right: 20px;
+  top: -20px;
+  font-size: 30px;
+}
+.coeur .plein {
+  opacity: 0;
+}
+.coeur:hover .plein {
+  transition: all 800ms;
+  opacity: 1;
+}
+
+.loader_spin {
+  animation-name: disparition_fond_ecran;
+  animation-duration: 1ms;
+}
+
+@keyframes rotation-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes apparition-plat {
+  0% {
+    opacity: 0;
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disparition_fond_ecran {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -65,6 +122,9 @@ header .logo {
 header .entete {
   width: 100%;
   position: relative;
+}
+header .entete i {
+  display: none;
 }
 header a {
   position: absolute;
@@ -191,6 +251,9 @@ form input {
     height: 15%;
   }
 }
+#restaurants a .descriptif .vide, #restaurants a .descriptif .plein {
+  top: 19px;
+}
 #restaurants a .descriptif .nom_restaurant {
   padding-top: 10px;
   padding-bottom: 5px;
@@ -206,6 +269,14 @@ form input {
 
 body {
   background-color: #f7f7f6;
+}
+
+.entete {
+  width: 100%;
+  position: relative;
+}
+.entete i {
+  display: flex;
 }
 
 .photo_plat {
@@ -239,13 +310,6 @@ body {
   font-family: "Shrikhand-Regular";
   font-size: 30px;
 }
-.titre .coeur {
-  font-size: 30px;
-}
-.titre .coeur {
-  font-size: 30px;
-  display: none;
-}
 
 .menu {
   display: flex;
@@ -276,6 +340,7 @@ body {
   background-color: white;
   box-shadow: 0px 2px 10px #cac9c9;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .menu .plat .valider {
   display: flex;
@@ -294,7 +359,6 @@ body {
   font-size: 25px;
   color: white;
   align-items: center;
-  transform: rotate(180deg);
 }
 .menu .plat .descriptif {
   padding-left: 20px;
@@ -460,6 +524,8 @@ body {
 
 body {
   margin: 0px;
+  position: relative;
+  width: 100%;
 }
 @media screen and (min-width: 992px) {
   body {
@@ -470,6 +536,30 @@ body {
     padding-right: 20px;
     padding-left: 20px;
   }
+}
+body .loader_spin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: gray;
+  display: flex;
+  z-index: 999;
+  opacity: 0.8;
+  justify-content: center;
+}
+body .loader_spin .loader {
+  display: flex;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-bottom: 16px solid #99E2D0;
+  width: 120px;
+  height: 120px;
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 6;
 }
 
 /*# sourceMappingURL=style.css.map */
