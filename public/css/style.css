@@ -187,7 +187,7 @@ header .entete {
   position: relative;
 }
 header .entete i {
-  display: none;
+  display: flex;
 }
 header a {
   position: absolute;
