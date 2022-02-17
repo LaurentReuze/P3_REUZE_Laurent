@@ -496,7 +496,11 @@ form input {
   }
 }
 #page .loader_spin {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background: gray;
@@ -507,7 +511,7 @@ form input {
 }
 @media screen and (min-width: 992px) {
   #page .loader_spin {
-    width: 54%;
+    width: 100%;
   }
 }
 #page .loader_spin .loader {
