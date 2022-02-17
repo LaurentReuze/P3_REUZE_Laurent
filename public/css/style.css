@@ -713,41 +713,30 @@ form input {
     font-size: 2em;
   }
 }
-#page #restaurants .presentation_restaurant {
-  width: 100%;
-  height: 1000px;
-}
 @media screen and (min-width: 992px) {
   #page #restaurants .presentation_restaurant {
-    text-align: center;
-    height: 600px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) {
-  #page #restaurants .presentation_restaurant {
-    height: 1200px;
-  }
+#page #restaurants .restaurant {
+  height: 300px;
 }
-#page #restaurants a {
+#page #restaurants .restaurant a {
   text-decoration: none;
   color: black;
   display: flex;
   flex-direction: column;
-  height: 25%;
-  width: 100%;
   position: relative;
 }
 @media screen and (min-width: 992px) {
-  #page #restaurants a {
+  #page #restaurants .restaurant {
     display: inline-block;
-    height: 50%;
     width: 45%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: 20px;
   }
 }
-#page #restaurants a .nouveau {
+#page #restaurants .restaurant .nouveau {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -763,24 +752,21 @@ form input {
   border-radius: 5px;
 }
 @media screen and (min-width: 768px) {
-  #page #restaurants a .nouveau {
+  #page #restaurants .restaurant .nouveau {
     font-size: 20px;
     width: 120px;
     height: 35px;
   }
 }
-#page #restaurants a .photo {
-  width: 100%;
-  height: 70%;
+#page #restaurants .restaurant .photo {
   overflow: hidden;
   border-radius: 20px 20px 0px 0px;
   max-height: 222px;
 }
-#page #restaurants a .photo img {
+#page #restaurants .restaurant .photo img {
   width: 100%;
-  transform: translate(0px, -50px);
 }
-#page #restaurants a .descriptif {
+#page #restaurants .restaurant .descriptif {
   height: 25%;
   width: 100%;
   background-color: white;
@@ -790,33 +776,33 @@ form input {
   justify-content: space-between;
 }
 @media screen and (min-width: 992px) {
-  #page #restaurants a .descriptif {
+  #page #restaurants .restaurant .descriptif {
     text-align: left;
     height: 15%;
   }
 }
 @media screen and (min-width: 768px) {
-  #page #restaurants a .descriptif {
+  #page #restaurants .restaurant .descriptif {
     height: 20%;
   }
 }
-#page #restaurants a .descriptif .vide, #page #restaurants a .descriptif .plein {
+#page #restaurants .restaurant .descriptif .vide, #page #restaurants .restaurant .descriptif .plein {
   top: 19px;
 }
-#page #restaurants a .descriptif .nom_restaurant {
+#page #restaurants .restaurant .descriptif .nom_restaurant {
   padding-top: 10px;
   padding-bottom: 5px;
   font-family: "Roboto-Bold";
 }
-#page #restaurants a .descriptif .description_restaurant {
+#page #restaurants .restaurant .descriptif .description_restaurant {
   width: 90%;
   font-family: "Roboto-Regular";
 }
-#page #restaurants a .descriptif span {
+#page #restaurants .restaurant .descriptif span {
   padding-left: 10px;
 }
 @media screen and (min-width: 768px) {
-  #page #restaurants a .descriptif span {
+  #page #restaurants .restaurant .descriptif span {
     font-size: 20px;
   }
 }

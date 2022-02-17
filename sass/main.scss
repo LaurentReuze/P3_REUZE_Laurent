@@ -254,38 +254,31 @@
         }
     
         & .presentation_restaurant{
-            width: 100%;
-            height: 1000px;
+
     
             @media screen and (min-width:992px) {
-                text-align: center;
-                height: 600px !important;
-            }
-
-            @media screen and (min-width:768px) {
-                height: 1200px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
             }
         }
     
-        a{
+        .restaurant{
+            height: 300px;
+
+            a{
             text-decoration: none;
             color: black;
             display: flex;
             flex-direction: column;
-            height: 25%;
-            width: 100%;
             position: relative;
+            }
     
             @media screen and (min-width:992px) {
                 display: inline-block;
-                height: 50%;
                 width: 45%;
-                flex-direction: row;
-                flex-wrap: wrap;
-                margin-right: 20px;
             }
             
-
             & .nouveau{
                 display: flex;
                 align-items: center;
@@ -308,15 +301,12 @@
             }
 
             .photo{
-                width: 100%;
-                height: 70%;
                 overflow: hidden;
                 border-radius: 20px 20px 0px 0px;
                 max-height: 222px;
     
                 & img{
                     width: 100%;
-                    transform: translate(0px, -50px);
                 }
                 
             }
