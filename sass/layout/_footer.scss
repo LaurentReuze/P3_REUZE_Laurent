@@ -12,6 +12,7 @@ footer{
 
     & span{
         display: block;
+        font-family: $font_normal;
     }
     .marque{
         font-family: "Shrikhand-Regular";
@@ -29,5 +30,10 @@ footer{
         & div{
             width: 30px;
         }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: $font_normal;
     }
 }
