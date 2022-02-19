@@ -7,6 +7,17 @@
     }
 }
 
+@keyframes apparition_menu {
+    0%{
+        opacity: 0;
+        transform: translate(0px, 10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
 @keyframes apparition-plat {
     0%{
         opacity: 0;
@@ -37,13 +48,4 @@
     }
 }
 
-@keyframes apparition_menu {
-    0%{
-        opacity: 0;
-        transform: translate(0px, 10px);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0px, 0px);
-    }
-}
+

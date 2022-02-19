@@ -26,6 +26,8 @@
         margin: auto;
     }
 
+    // Loader
+
     & .loader_spin{
         position: fixed;
         top: 0;
@@ -59,6 +61,8 @@
             margin-top: 350px;
         }
     }
+
+    // section présentation
 
     #presentation{
         padding-left: 20px;
@@ -119,6 +123,8 @@
             }
         }
     }
+
+    // section fonctionnement
 
     #fonctionnement{
 
@@ -244,6 +250,8 @@
         
     }
 
+    // section restaurant
+
     #restaurants{
         padding-left: 20px;
         padding-right: 20px;
@@ -358,20 +366,9 @@
                         font-size: 20px;
                     }
                 }
-        
-                
-        
             }
         }
-    
-        
-    
-        
     }
-
-    
-    
-      
 }
 
 
