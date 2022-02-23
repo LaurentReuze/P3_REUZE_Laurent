@@ -71,12 +71,14 @@
     }
     .plein{
         opacity: 0;
+        color: $color-primary;
     }
     &:hover{
 
         .plein{
             transition: all 800ms;
             opacity: 1;
+            
         }
     }
 }
